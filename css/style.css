@@ -1,7 +1,11 @@
 /* default settings */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Titillium Web', sans-serif;
   font-size: 18px;
+  padding-top: 60px;
 }
 h1 {
   font-family: 'Expletus Sans', cursive;
@@ -28,7 +32,9 @@ a.navbar-brand h1 {
 .navbar h2{
   font-size: 1rem;
 }
-
+.navbar {
+  margin-bottom: 80px;
+}
 /* jumbtron overwrite to align center and remove background*/
 .jumbotron {
   text-align: center;
@@ -44,12 +50,36 @@ a.navbar-brand h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.parallax-img2 {
+  background: url("../img/background2.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.parallax-img3 {
+  background: url("../img/members.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 .burmese-welcome {
   font-family: 'Padauk', sans-serif;
   margin: 100px;
   font-size: 8rem;
+  font-weight: 900;
+  padding: 0;
+}
+.gallery-px {
+  font-family: 'Merienda One', cursive;
+  color: #e3e3e3;
+  margin: 100px;
+  font-size: 5rem;
   font-weight: 900;
   padding: 0;
 }
@@ -60,16 +90,22 @@ a.navbar-brand h1 {
   }
   .burmese-welcome {
     font-family: 'Padauk', sans-serif;
+    color: #ffa500;
+    text-shadow: 0px 2px #323232;
     margin: 70px 50px;
+    font-size: 4rem;
+  }
+  .gallery-px {
+    font-family: 'Merienda One', cursive;
+    color: #ffa500;
+    text-shadow: 0px 2px #323232;
+    margin: 100px;
     font-size: 3rem;
-    font-weight: 900;
   }
   .parallax-img {
-    background: url("../img/background.png");
-    background-size: 100% auto;
-    background-attachment: fixed;
     background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+  .parallax-img2 {
+    background-position: right;
   }
 }
