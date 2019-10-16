@@ -247,7 +247,14 @@ div.gallery-img img {
 
 /* #################### TESTINGS #################### */
 
+.img4-fit img {
+  width: 120%;
+  height: auto;
+}
 
+.galleryimg img {
+  box-shadow: 2px 2px 8px #4b4b4b;
+}
 
 
 
