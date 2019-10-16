@@ -168,6 +168,9 @@ article p.intro {
   font-family: 'Titillium Web', sans-serif;
   font-size: 22px;
 }
+.display-4 {
+  font-size: 4.5rem;
+}
 /* #################### FONTS END #################### */
 
 /* #################### PARALLAX START #################### */
@@ -289,7 +292,7 @@ div.gallery-img img {
     color: #e3e3e3;
     text-shadow: -2px 2px #323232;
     margin: 30px 50px;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .gallery-px {
     font-family: 'Merienda One', cursive;
