@@ -197,6 +197,28 @@ article p.intro {
 }
 /* #################### PARALLAX END #################### */
 
+/* #################### FOOTER STARTS #################### */
+.btn-floating .fa {
+  font-size: 50px;
+  margin: 30px;
+}
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+.fa-twitter-square:hover {
+  color: #1da1f2;
+}
+.fa-google-plus-square:hover {
+   color: #db4437;
+}
+.fa-linkedin-square:hover {
+  color: #1985bc;
+}
+.page-footer {
+  padding-top: 30px;
+}
+/* #################### FOOTER ENDS #################### */
+
 /* To solve contents covered by navbar */
 .navbar {
   margin-bottom: 80px;
@@ -206,6 +228,7 @@ article p.intro {
 .jumbotron {
   text-align: center;
   background: none;
+  box-shadow: none;
 }
 
 div.profile-img img {
@@ -223,9 +246,6 @@ div.gallery-img img {
 }
 
 /* #################### TESTINGS #################### */
-
-
-
 
 
 
@@ -284,5 +304,9 @@ div.gallery-img img {
     background-size: 100% auto;
     background-attachment: inherit;
     background-position: center;
+  }
+  .btn-floating .fa {
+    font-size: 30px;
+    margin: 10px;
   }
 }
