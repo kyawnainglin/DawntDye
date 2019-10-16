@@ -31,6 +31,115 @@ h3 {
   font-size: 2rem;
 }
 
+/* #################### MEMBERS SECTION STARTS #################### */
+.clan-members {
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  margin-bottom: 4rem;
+}
+.clan-members .member-pics {
+  overflow: hidden;
+  position: relative;
+}
+.clan-members:hover {
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
+              0 1px 4px rgba(0, 0, 0, 0.3),
+              0 0 40px rgba(0, 0, 0, 0.1);
+}
+.clan-members .member-pics img {
+  width: 100%;
+  height: auto;
+}
+
+.clan-members .member-pics:before,
+.clan-members .member-pics:after {
+  content: "";
+  width: 200%;
+  height: 80%;
+  position: absolute;
+  top: -100%;
+  left: -4%;
+  transform: rotate(45deg);
+  transition: all 0.5s ease 0s;
+  background: rgba(16,159,191,0.8);
+}
+.clan-members .member-pics:after {
+  top: auto;
+  left: auto;
+  bottom: -100%;
+  right: -4%;
+  background: rgba(226, 178, 3, 0.8);
+}
+.clan-members:hover .member-pics:before {
+  top: 0;
+}
+.clan-members:hover .member-pics:after {
+  bottom: 0;
+}
+
+.social-icons {
+  width: 100%
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 45%;
+  right: 27%;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.4s ease 0s;
+}
+.social-icons li {
+  display: inline-block;
+}
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  position: relative;
+  margin-right: 10px;
+  color: red;
+  transition:  all 0.5s ease 0s;
+}
+.clan-members:hover .social-icons {
+  opacity: 1;
+}
+.social-icons li a:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #e4e4e4;
+  border-radius: 0px 20px 20px 20px;
+  transition: all 0.3s ease 0s;
+}
+.social-icons li a:hover:after {
+  transform: rotate(180deg);
+}
+
+.member-content {
+  padding: 20px;
+}
+.member-content .title{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.member-content .post{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+/* #################### MEMBERS SECTION ENDS #################### */
+
 /* #################### FONTS START #################### */
 a.navbar-brand h1 {
   font-size: 1rem;
@@ -114,11 +223,6 @@ div.gallery-img img {
 }
 
 /* #################### TESTINGS #################### */
-div.container div.row div.col-lg-4, div.container div.row div.col-lg-3, div.container div.row div.col-lg-5 {
-  background-color: green;
-  border: 1px solid red;
-}
-
 
 
 
